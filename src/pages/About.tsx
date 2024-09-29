@@ -1,4 +1,5 @@
-import Section from "../components/About/AboutSection";
+
+import AboutSection from "@components/About/AboutSection";
 import "../App.css";
 
 
@@ -6,7 +7,7 @@ function About() {
   return (
     <>
       <main>
-        <Section/>
+        <AboutSection/>
       </main>
     </>
   );

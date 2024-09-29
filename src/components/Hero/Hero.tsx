@@ -1,5 +1,7 @@
+
 import { FC } from "react"
 import Wrapper from "./hero-components/Wrapper"
+
 
 
 const Hero: FC = () => {

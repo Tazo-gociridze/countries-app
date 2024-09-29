@@ -1,6 +1,6 @@
-import {FC, ReactNode} from "react"
+import React, { FC } from "react"
 
-const Button: FC<{children: ReactNode}> = ({children}) => {
+const Button: FC<React.PropsWithChildren> = ({children}) => {
   return (
     <button>{children}</button>
   )

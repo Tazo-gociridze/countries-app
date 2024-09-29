@@ -1,6 +1,5 @@
-import Img from "@/components/About/about-components/Img";
 import "../App.css";
-import {CountrySection} from "@/components/country/CountrySection";
+import {CountrySection} from "@components/country/CountrySection";
 
 
 
@@ -9,7 +8,6 @@ function Country() {
     <>
       <main>
         <CountrySection/>
-        <Img/>
       </main>
     </>
   );
