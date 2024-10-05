@@ -5,8 +5,7 @@ interface CountryInfoProps {
   characteristics: CountryCharacteristic[];
 }
 
-const Characteristics: FC<CountryInfoProps> = ({characteristics}) => {
- 
+const Characteristics: FC<CountryInfoProps> = ({ characteristics }) => {
   return (
     <div className="characteristics">
       {characteristics.map((item, i) => (

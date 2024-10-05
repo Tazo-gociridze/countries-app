@@ -11,6 +11,8 @@ export const CountrySection: FC = () => {
         <>
         <section className="country__section">
             <Wrapper/>
+            <Wrapper/>
+            <Wrapper/>
         </section>
         </>
     )

@@ -5,6 +5,7 @@ const navs = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Country", path: "/country" },
+    { name: "Contact", path: "/contact" },
   ];
 
 const Nav: FC = () => {

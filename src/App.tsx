@@ -1,11 +1,10 @@
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Country from "./pages/Country";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -16,6 +15,7 @@ function App() {
               <Route path="/" index element={<Home/>}></Route>
               <Route path="/about" element={<About/>}></Route>
               <Route path="/country" element={<Country/>}></Route>
+              <Route path="/contact" element={<Contact/>}></Route>
             </Route>
        </Routes>
     </BrowserRouter>

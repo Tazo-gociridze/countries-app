@@ -235,6 +235,42 @@
 }
 
 
+/* Contact page ------>>> */
+
+.contact-page{
+   form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+}
+
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+
+    input{
+        height: 40px;
+        padding: 0px 10px;
+    }
+
+    textarea{
+        max-width: 400px;
+        min-width: 100%;
+        padding: 10px 10px;
+    }
+
+    button{
+        height: 40px;
+
+    }
+}
+
+
 
 /*
   ------------------ media query
