@@ -203,19 +203,32 @@
 .country__section{
     margin-top: 50px;
     padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
 }
 
 .country__section-wrapper{
     display: flex;
     justify-content:space-around;
     column-gap: 100px;
+    text-decoration: none;
 }
 
 .flag-img{
     width: 900px;
     height: 700px;
-    background-image: url('./img/flag.png');
     background-size: cover;
+}
+
+.georgia{
+    background-image: url('./img/flag.png');
+}
+.armenia{
+    background-image: url('./img/flag-2.png');
+}
+.denmark{
+    background-image: url('./img/flag-3.jpg');
 }
 
 .characteristics{

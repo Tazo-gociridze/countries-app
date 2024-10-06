@@ -1,18 +1,22 @@
 import { FC } from "react";
-import { CountryCharacteristic } from "./Wrapper";
+import { CountryData } from "../static/countryCharacteristics";
 
 interface CountryInfoProps {
-  characteristics: CountryCharacteristic[];
+  characteristics: CountryData;
 }
 
 const Characteristics: FC<CountryInfoProps> = ({ characteristics }) => {
   return (
     <div className="characteristics">
-      {characteristics.map((item, i) => (
-        <div key={i} className="characteristic">
-          <span>{item.name}</span>
-        </div>
-      ))}
+      <div className="characteristic">
+        <span>{characteristics.name}</span> 
+      </div>
+      <div className="characteristic">
+        <span>{characteristics.capital}</span>
+      </div>
+      <div className="characteristic">
+        <span>{characteristics.population}</span>
+      </div>
     </div>
   );
 };

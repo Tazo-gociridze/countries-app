@@ -1,8 +1,8 @@
 import { FC } from "react"
 
-const Img: FC = () => {
+const Img: FC<{flagType:string}> = ({flagType}) => {
   return (
-    <div className="flag-img"></div>
+    <div className={"flag-img" + ' ' + flagType}></div>
   )
 };
 

@@ -1,39 +1,25 @@
 import { FC } from "react";
 import Img from "./Img";
 import Characteristics from "./Characteristics";
+import { CountryData } from "../static/countryCharacteristics";
+import { Link } from "react-router-dom";
 
-export interface CountryCharacteristic {
-  name: string;
-  capital: string;
-  population: string;
+
+interface WrapperProps {
+  characteristics: CountryData;
+  flagType: string;
 }
 
-export const Wrapper: FC = () => {
-  const countryCharacteristics: CountryCharacteristic[] = [
-    {
-      name: "Country: Georgia",
-      capital: "Capital: Tbilisi",
-      population: "population: 3 736,4 thousand",
-    },
+const Wrapper: FC<WrapperProps> = ({ characteristics, flagType }) => {
 
-    {
-      name: "Country: Georgia",
-      capital: "Capital: Tbilisi",
-      population: "population: 3 736,4 thousand",
-    },
-
-    {
-      name: "Country: Georgia",
-      capital: "Capital: Tbilisi",
-      population: "population: 3 736,4 thousand",
-    },
-
-  ];
+  const id = characteristics.id
 
   return (
-    <div className="country__section-wrapper">
-      <Img />
-      <Characteristics characteristics={countryCharacteristics} />
-    </div>
+    <Link to={`/country/${id}`} className="country__section-wrapper">
+      <Img flagType={flagType} />
+      <Characteristics characteristics={characteristics} />
+    </Link>
   );
 };
+
+export default Wrapper;

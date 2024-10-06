@@ -1,5 +1,5 @@
+import CountrySection from "@components/country/CountrySection";
 import "../App.css";
-import {CountrySection} from "@components/country/CountrySection";
 
 
 
