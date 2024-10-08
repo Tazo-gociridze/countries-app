@@ -1,24 +1,27 @@
 import { FC } from "react";
 import Img from "./Img";
-import Characteristics from "./Characteristics";
 import { CountryData } from "../static/countryCharacteristics";
 import { Link } from "react-router-dom";
-
+import Characteristics from "./Characteristics";
 
 interface WrapperProps {
-  characteristics: CountryData;
   flagType: string;
+  el: CountryData;
+  countryIndex: number;
+  countryState: CountryData[];
+  countrySetState: React.Dispatch<React.SetStateAction<CountryData[]>>;
 }
 
-const Wrapper: FC<WrapperProps> = ({ characteristics, flagType }) => {
-
-  const id = characteristics.id
+const Wrapper: FC<WrapperProps> = ({flagType, el, countryIndex, countryState, countrySetState}) => {
+  const id = el.id;
 
   return (
-    <Link to={`/country/${id}`} className="country__section-wrapper">
-      <Img flagType={flagType} />
-      <Characteristics characteristics={characteristics} />
-    </Link>
+    <div className="country__section-wrapper">
+      <Link to={`/country/${id}`} >
+        <Img flagType={flagType} />
+      </Link>
+      <Characteristics el={el} index={countryIndex} countryState={countryState} countrySetState={countrySetState}/>
+    </div>
   );
 };
 

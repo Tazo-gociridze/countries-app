@@ -83,11 +83,10 @@ function Form() {
     e.preventDefault();
     console.log({ firstName, lastName, email, message });
 
-    // Сброс значений (только для логики, так как это не обновит интерфейс)
-    firstName = "";
-    lastName = "";
-    email = "";
-    message = "";
+    // firstName = "";
+    // lastName = "";
+    // email = "";
+    // message = "";
   };
 
   return (
